@@ -16,6 +16,7 @@
 		688BB74A2B8105F500083798 /* MercadoSearchUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7492B8105F500083798 /* MercadoSearchUIKitTests.swift */; };
 		688BB7662B810DB300083798 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7652B810DB300083798 /* SearchViewController.swift */; };
 		688BB7682B810F0900083798 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7672B810F0900083798 /* SearchCell.swift */; };
+		688BB76A2B81107300083798 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7692B81107300083798 /* SearchItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		688BB7622B81064400083798 /* MercadoSearchUIKit.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MercadoSearchUIKit.xctestplan; sourceTree = "<group>"; };
 		688BB7652B810DB300083798 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		688BB7672B810F0900083798 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		688BB7692B81107300083798 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				688BB7362B8105F300083798 /* HomeViewController.swift */,
 				688BB7652B810DB300083798 /* SearchViewController.swift */,
 				688BB7672B810F0900083798 /* SearchCell.swift */,
+				688BB7692B81107300083798 /* SearchItem.swift */,
 				688BB7382B8105F300083798 /* Main.storyboard */,
 				688BB73B2B8105F400083798 /* Assets.xcassets */,
 				688BB73D2B8105F400083798 /* LaunchScreen.storyboard */,
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				688BB76A2B81107300083798 /* SearchItem.swift in Sources */,
 				688BB7372B8105F300083798 /* HomeViewController.swift in Sources */,
 				688BB7682B810F0900083798 /* SearchCell.swift in Sources */,
 				688BB7332B8105F300083798 /* AppDelegate.swift in Sources */,

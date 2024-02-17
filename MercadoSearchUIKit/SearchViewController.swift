@@ -8,9 +8,23 @@
 import UIKit
 
 class SearchViewController: UITableViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    private var searchItems: [SearchItem] = [] 
+    
+    func setSearchItems(_ searchItems: [SearchItem]) {
+        self.searchItems = searchItems
+        tableView.reloadData()
     }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        searchItems.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell", for: indexPath) as! SearchCell
+        let searchItem = searchItems[indexPath.row]
+        
+        cell.label.text = searchItem.name
+        
+        return cell
+    }
 }
