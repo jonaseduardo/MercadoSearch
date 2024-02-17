@@ -22,6 +22,8 @@
 		688BB7722B8147C100083798 /* HomeUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7712B8147C100083798 /* HomeUIComposer.swift */; };
 		688BB7752B81495700083798 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7742B81495700083798 /* Coordinator.swift */; };
 		688BB7772B81498200083798 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7762B81498200083798 /* HomeCoordinator.swift */; };
+		688BB77A2B81505F00083798 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7792B81505F00083798 /* DetailViewModel.swift */; };
+		688BB77C2B81521800083798 /* DetailUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB77B2B81521800083798 /* DetailUIComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		688BB7712B8147C100083798 /* HomeUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIComposer.swift; sourceTree = "<group>"; };
 		688BB7742B81495700083798 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		688BB7762B81498200083798 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		688BB7792B81505F00083798 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		688BB77B2B81521800083798 /* DetailUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUIComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 		688BB7312B8105F300083798 /* MercadoSearchUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				688BB7782B81501C00083798 /* View Models */,
 				688BB7732B81494400083798 /* Navigation */,
 				688BB7702B8147B400083798 /* Composer */,
 				688BB76D2B8115DA00083798 /* View Controllers */,
@@ -134,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				688BB7712B8147C100083798 /* HomeUIComposer.swift */,
+				688BB77B2B81521800083798 /* DetailUIComposer.swift */,
 			);
 			path = Composer;
 			sourceTree = "<group>";
@@ -145,6 +151,14 @@
 				688BB7762B81498200083798 /* HomeCoordinator.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		688BB7782B81501C00083798 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				688BB7792B81505F00083798 /* DetailViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,11 +264,13 @@
 			files = (
 				688BB76A2B81107300083798 /* SearchItem.swift in Sources */,
 				688BB7372B8105F300083798 /* HomeViewController.swift in Sources */,
+				688BB77C2B81521800083798 /* DetailUIComposer.swift in Sources */,
 				688BB7752B81495700083798 /* Coordinator.swift in Sources */,
 				688BB76F2B81350200083798 /* SearchViewModel.swift in Sources */,
 				688BB7682B810F0900083798 /* SearchCell.swift in Sources */,
 				688BB7332B8105F300083798 /* AppDelegate.swift in Sources */,
 				688BB7662B810DB300083798 /* SearchViewController.swift in Sources */,
+				688BB77A2B81505F00083798 /* DetailViewModel.swift in Sources */,
 				688BB7722B8147C100083798 /* HomeUIComposer.swift in Sources */,
 				688BB7352B8105F300083798 /* SceneDelegate.swift in Sources */,
 				688BB76C2B8115D400083798 /* DetailViewController.swift in Sources */,

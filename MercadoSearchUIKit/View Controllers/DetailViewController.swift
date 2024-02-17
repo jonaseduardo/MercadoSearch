@@ -10,9 +10,9 @@ import UIKit
 class DetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     
-    let viewModel: SearchItem
+    let viewModel: DetailViewModel
     
-    init?(coder: NSCoder, viewModel: SearchItem) {
+    init?(coder: NSCoder, viewModel: DetailViewModel) {
         self.viewModel = viewModel
         super.init(coder: coder)
     }

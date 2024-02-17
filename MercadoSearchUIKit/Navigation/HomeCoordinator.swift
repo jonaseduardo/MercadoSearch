@@ -21,12 +21,7 @@ class HomeCoordinator: Coordinator {
     }
     
     func navigateToDetail(item: SearchItem) {
-        let bundle = Bundle(for: DetailViewController.self)
-        let storyboard = UIStoryboard(name: "Main", bundle: bundle)
-        
-        let detailViewController = storyboard.instantiateViewController(identifier: "DetailViewController") { coder in
-            DetailViewController(coder: coder, viewModel: item)
-        }
+        let detailViewController = DetailUIComposer.createDetail(item: item)
         navigationController.pushViewController(detailViewController, animated: true)
     }
 }
