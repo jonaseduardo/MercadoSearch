@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  MercadoSearchUIKit
 //
 //  Created by Jonathan García on 17/02/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     var searchController: UISearchController!
 
     override func viewDidLoad() {
@@ -22,13 +22,13 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UISearchBarDelegate {
+extension HomeViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
 
     }
 }
 
-extension ViewController: UISearchResultsUpdating {
+extension HomeViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         searchController.showsSearchResultsController = true
     }
