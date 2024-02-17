@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "EA561AC8-6996-44C2-B026-E98F874B0EDC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MercadoSearchUIKit.xcodeproj",
+      "identifier" : "688BB72E2B8105F300083798",
+      "name" : "MercadoSearchUIKit"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MercadoSearchUIKit.xcodeproj",
+        "identifier" : "688BB7442B8105F500083798",
+        "name" : "MercadoSearchUIKitTests"
+      }
+    }
+  ],
+  "version" : 1
+}
