@@ -37,12 +37,21 @@ class HomeViewController: UIViewController {
             DetailViewController(coder: coder, viewModel: viewModel)
         }
     }
+    
+    private func restartSearchState() {
+        searchController.isActive = false
+        searchViewController.setSearchItems([])
+    }
 }
 
 extension HomeViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         let item = searchText.isEmpty ? [] : SearchItem.SomeItems
         searchViewController.setSearchItems(item)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        restartSearchState()
     }
 }
 
@@ -55,7 +64,7 @@ extension HomeViewController: UISearchResultsUpdating {
 extension HomeViewController: SearchResultDelegate {
     func didSelect(item: SearchItem) {
         searchController.dismiss(animated: true) {
-            self.searchController.isActive = false
+            self.restartSearchState()
             
             let detailViewController = self.getDetailViewController(viewModel: item)
             self.navigationController?.pushViewController(detailViewController, animated: true)
