@@ -8,9 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var searchController: UISearchController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.placeholder = "Search Products"
+        
+        navigationItem.searchController = searchController
     }
 }
 
