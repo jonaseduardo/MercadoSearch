@@ -8,9 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    lazy var currentStoryboard: UIStoryboard = {
-        return UIStoryboard(name: "Main", bundle: nil)
-    }()
+    var navigateToDetail: ((SearchItem) -> Void)?
     
     let viewModel: SearchViewModel
     let searchViewController: SearchViewController
@@ -25,30 +23,26 @@ class HomeViewController: UIViewController {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("You must create this view controller with a viewModel")
+        fatalError("You must create this view controller with a viewModel and a search controller")
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchViewController.delegate = self
-        
-        
-        searchController.searchBar.placeholder = "Search Products"
-        searchController.searchBar.delegate = self
-        searchController.searchResultsUpdater = self
-        
-        navigationItem.searchController = searchController
+        configSearchView()
         
         viewModel.items = { items in
             self.searchViewController.setSearchItems(items)
         }
     }
     
-    private func getDetailViewController(viewModel: SearchItem) -> DetailViewController {
-        return currentStoryboard.instantiateViewController(identifier: "DetailViewController") { coder in
-            DetailViewController(coder: coder, viewModel: viewModel)
-        }
+    private func configSearchView() {
+        searchViewController.delegate = self
+        searchController.searchBar.placeholder = "Search Products"
+        searchController.searchBar.delegate = self
+        searchController.searchResultsUpdater = self
+        
+        navigationItem.searchController = searchController
     }
     
     private func restartSearchState() {
@@ -77,9 +71,7 @@ extension HomeViewController: SearchResultDelegate {
     func didSelect(item: SearchItem) {
         searchController.dismiss(animated: true) {
             self.restartSearchState()
-            
-            let detailViewController = self.getDetailViewController(viewModel: item)
-            self.navigationController?.pushViewController(detailViewController, animated: true)
+            self.navigateToDetail?(item)
         }
     }
 }

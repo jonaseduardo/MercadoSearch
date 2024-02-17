@@ -1,5 +1,5 @@
 //
-//  HomeComposer.swift
+//  HomeUIComposer.swift
 //  MercadoSearchUIKit
 //
 //  Created by Jonathan García on 17/02/2024.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-final class HomeComposer {
-    static func createHomeViewController() -> HomeViewController {
+final class HomeUIComposer {
+    static func createHome() -> HomeViewController {
         let searchViewModel = SearchViewModel()
         let searchViewController = createSearchViewController()
         
@@ -22,7 +22,7 @@ final class HomeComposer {
         return controller
     }
     
-    static func createSearchViewController() -> SearchViewController {
+    private static func createSearchViewController() -> SearchViewController {
         let bundle = Bundle(for: SearchViewController.self)
         let storyboard = UIStoryboard(name: "Main", bundle: bundle)
         let controller = storyboard.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
