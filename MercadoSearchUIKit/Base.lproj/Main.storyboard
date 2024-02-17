@@ -16,8 +16,20 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWa-BB-4Yi">
+                                <rect key="frame" x="173.66666666666666" y="119" width="45.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QWa-BB-4Yi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="U9A-an-2OX"/>
+                            <constraint firstItem="QWa-BB-4Yi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hr4-XD-H69"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="88c-Bi-CpI"/>
                 </viewController>
@@ -69,6 +81,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDm-Zx-Vbg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2082" y="-2"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="SLw-cM-esu">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="tsp-Oe-s6f" customClass="DetailViewController" customModule="MercadoSearchUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JMQ-2o-WiN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2Z-ZC-hb8">
+                                <rect key="frame" x="8" y="67" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mbJ-KF-7ds"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a2Z-ZC-hb8" firstAttribute="leading" secondItem="mbJ-KF-7ds" secondAttribute="leading" constant="8" id="3nf-ry-RuZ"/>
+                            <constraint firstItem="a2Z-ZC-hb8" firstAttribute="top" secondItem="mbJ-KF-7ds" secondAttribute="top" constant="8" id="Vd7-Mx-jPl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="a2Z-ZC-hb8" id="4FO-4E-tvU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yhd-i9-jlo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3004" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PF6-Nb-3NR">

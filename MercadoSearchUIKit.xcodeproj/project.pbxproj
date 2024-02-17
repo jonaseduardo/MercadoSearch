@@ -17,6 +17,7 @@
 		688BB7662B810DB300083798 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7652B810DB300083798 /* SearchViewController.swift */; };
 		688BB7682B810F0900083798 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7672B810F0900083798 /* SearchCell.swift */; };
 		688BB76A2B81107300083798 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7692B81107300083798 /* SearchItem.swift */; };
+		688BB76C2B8115D400083798 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB76B2B8115D400083798 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		688BB7652B810DB300083798 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		688BB7672B810F0900083798 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		688BB7692B81107300083798 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+		688BB76B2B8115D400083798 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +88,9 @@
 		688BB7312B8105F300083798 /* MercadoSearchUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				688BB76D2B8115DA00083798 /* View Controllers */,
 				688BB7322B8105F300083798 /* AppDelegate.swift */,
 				688BB7342B8105F300083798 /* SceneDelegate.swift */,
-				688BB7362B8105F300083798 /* HomeViewController.swift */,
-				688BB7652B810DB300083798 /* SearchViewController.swift */,
 				688BB7672B810F0900083798 /* SearchCell.swift */,
 				688BB7692B81107300083798 /* SearchItem.swift */,
 				688BB7382B8105F300083798 /* Main.storyboard */,
@@ -106,6 +107,16 @@
 				688BB7492B8105F500083798 /* MercadoSearchUIKitTests.swift */,
 			);
 			path = MercadoSearchUIKitTests;
+			sourceTree = "<group>";
+		};
+		688BB76D2B8115DA00083798 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				688BB7362B8105F300083798 /* HomeViewController.swift */,
+				688BB7652B810DB300083798 /* SearchViewController.swift */,
+				688BB76B2B8115D400083798 /* DetailViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 				688BB7332B8105F300083798 /* AppDelegate.swift in Sources */,
 				688BB7662B810DB300083798 /* SearchViewController.swift in Sources */,
 				688BB7352B8105F300083798 /* SceneDelegate.swift in Sources */,
+				688BB76C2B8115D400083798 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

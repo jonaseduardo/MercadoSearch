@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol SearchResultDelegate: AnyObject {
+  func didSelect(item: SearchItem)
+}
+
 class SearchViewController: UITableViewController {
-    private var searchItems: [SearchItem] = [] 
+    private var searchItems: [SearchItem] = []
+    var delegate: SearchResultDelegate?
     
     func setSearchItems(_ searchItems: [SearchItem]) {
         self.searchItems = searchItems
@@ -26,5 +31,10 @@ class SearchViewController: UITableViewController {
         cell.label.text = searchItem.name
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let searchItem = searchItems[indexPath.row]
+        delegate?.didSelect(item: searchItem)
     }
 }
