@@ -17,7 +17,6 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:MercadoSearchUIKit.xcodeproj",
         "identifier" : "688BB7442B8105F500083798",
