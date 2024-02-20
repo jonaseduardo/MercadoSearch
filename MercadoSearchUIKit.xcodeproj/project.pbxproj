@@ -35,6 +35,7 @@
 		688BB79D2B84F55100083798 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB79C2B84F55100083798 /* CombineHelpers.swift */; };
 		688BB79F2B84F6AE00083798 /* SearchItemsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB79E2B84F6AE00083798 /* SearchItemsEndpoint.swift */; };
 		688BB7A12B84F74D00083798 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7A02B84F74D00083798 /* Environment.swift */; };
+		688BB7A42B85275300083798 /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7A32B85275300083798 /* SearchViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		688BB79C2B84F55100083798 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		688BB79E2B84F6AE00083798 /* SearchItemsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsEndpoint.swift; sourceTree = "<group>"; };
 		688BB7A02B84F74D00083798 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		688BB7A32B85275300083798 /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		688BB7482B8105F500083798 /* MercadoSearchUIKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				688BB7A22B85273F00083798 /* View Models */,
 				688BB7982B84EC8000083798 /* Search API */,
 				688BB7872B84D31400083798 /* Shared API Infrastructure */,
 				688BB78D2B84D37300083798 /* Helpers */,
@@ -282,6 +285,14 @@
 			path = "Combine Extensions";
 			sourceTree = "<group>";
 		};
+		688BB7A22B85273F00083798 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				688BB7A32B85275300083798 /* SearchViewModelTests.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -412,6 +423,7 @@
 			files = (
 				688BB78C2B84D34D00083798 /* URLSessionHTTPClientTests.swift in Sources */,
 				688BB78A2B84D33200083798 /* URLProtocolStub.swift in Sources */,
+				688BB7A42B85275300083798 /* SearchViewModelTests.swift in Sources */,
 				688BB78F2B84D38C00083798 /* TestHelpers.swift in Sources */,
 				688BB79A2B84EC9E00083798 /* SearchItemsMapperTests.swift in Sources */,
 				688BB7912B84D3B700083798 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
