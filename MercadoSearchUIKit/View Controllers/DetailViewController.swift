@@ -9,6 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
     let viewModel: DetailViewModel
     
@@ -25,5 +26,6 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         nameLabel.text = viewModel.name
+        priceLabel.text = viewModel.price
     }
 }

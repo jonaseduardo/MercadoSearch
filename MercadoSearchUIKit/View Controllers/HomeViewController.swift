@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        viewModel.items = { items in
+        viewModel.onReceiveItems = { items in
             self.searchViewController.setSearchItems(items)
         }
     }

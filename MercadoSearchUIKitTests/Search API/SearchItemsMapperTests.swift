@@ -37,13 +37,13 @@ final class SearchItemsMapperTests: XCTestCase {
     func test_map_deliversSearchItemsOn200HTTPResponseWithJSONItems() throws {
         let searchItem1 = makeSearchItem(name: "Celular",
                                          condition: "Nuevo",
-                                         quantity: "1",
-                                         price: "2000")
+                                         quantity: 1,
+                                         price: 2000.0)
         
         let searchItem2 = makeSearchItem(name: "Bicicleta",
                                          condition: "Usada",
-                                         quantity: "1",
-                                         price: "1500")
+                                         quantity: 1,
+                                         price: 1500.0)
         
         let expectedSearchItems = [searchItem1.model, searchItem2.model]
         let json = makeItemsJSON([searchItem1.json, searchItem2.json])
@@ -57,8 +57,8 @@ final class SearchItemsMapperTests: XCTestCase {
     
     private func makeSearchItem(name: String,
                                condition: String,
-                               quantity: String,
-                               price: String) -> (model: SearchItem, json: [String: Any]) {
+                               quantity: Int,
+                               price: Double) -> (model: SearchItem, json: [String: Any]) {
         
         let searchItem = SearchItem(name: name,
                                     condition: condition,
@@ -67,8 +67,8 @@ final class SearchItemsMapperTests: XCTestCase {
         let json: [String : Any] = [
             "title": name,
             "condition": condition,
-            "available_quantity": Int(quantity)!,
-            "price": Int(price)!
+            "available_quantity": quantity,
+            "price": price
         ]
         
         return (searchItem, json)

@@ -15,15 +15,15 @@ public final class SearchItemsMapper {
             let title: String
             let condition: String
             let available_quantity: Int
-            let price: Int
+            let price: Double
         }
         
         var searchItems: [SearchItem] {
             results.map {
                 SearchItem(name: $0.title, 
                            condition: $0.condition,
-                           quantity: String($0.available_quantity),
-                           price: String($0.price))
+                           quantity: $0.available_quantity,
+                           price: $0.price)
             }
         }
     }

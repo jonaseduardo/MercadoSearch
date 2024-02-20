@@ -32,6 +32,9 @@
 		688BB7942B84E75000083798 /* SearchItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7932B84E75000083798 /* SearchItemsMapper.swift */; };
 		688BB7972B84EAF700083798 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7962B84EAF700083798 /* HTTPURLResponse+StatusCode.swift */; };
 		688BB79A2B84EC9E00083798 /* SearchItemsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7992B84EC9E00083798 /* SearchItemsMapperTests.swift */; };
+		688BB79D2B84F55100083798 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB79C2B84F55100083798 /* CombineHelpers.swift */; };
+		688BB79F2B84F6AE00083798 /* SearchItemsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB79E2B84F6AE00083798 /* SearchItemsEndpoint.swift */; };
+		688BB7A12B84F74D00083798 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7A02B84F74D00083798 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		688BB7932B84E75000083798 /* SearchItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsMapper.swift; sourceTree = "<group>"; };
 		688BB7962B84EAF700083798 /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		688BB7992B84EC9E00083798 /* SearchItemsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsMapperTests.swift; sourceTree = "<group>"; };
+		688BB79C2B84F55100083798 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
+		688BB79E2B84F6AE00083798 /* SearchItemsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsEndpoint.swift; sourceTree = "<group>"; };
+		688BB7A02B84F74D00083798 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +122,10 @@
 		688BB7312B8105F300083798 /* MercadoSearchUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				688BB7922B84E73300083798 /* Search API */,
+				688BB79B2B84F52C00083798 /* Combine Extensions */,
 				688BB7812B84D28200083798 /* Shared API */,
 				688BB7842B84D2B400083798 /* Shared API Infrastructure */,
+				688BB7922B84E73300083798 /* Search API */,
 				688BB76D2B8115DA00083798 /* View Controllers */,
 				688BB7782B81501C00083798 /* View Models */,
 				688BB7802B84CF7000083798 /* Views */,
@@ -160,6 +167,7 @@
 			children = (
 				688BB7712B8147C100083798 /* HomeUIComposer.swift */,
 				688BB77B2B81521800083798 /* DetailUIComposer.swift */,
+				688BB7A02B84F74D00083798 /* Environment.swift */,
 			);
 			path = Composer;
 			sourceTree = "<group>";
@@ -245,6 +253,7 @@
 			children = (
 				688BB7952B84EAE400083798 /* Helpers */,
 				688BB7932B84E75000083798 /* SearchItemsMapper.swift */,
+				688BB79E2B84F6AE00083798 /* SearchItemsEndpoint.swift */,
 			);
 			path = "Search API";
 			sourceTree = "<group>";
@@ -263,6 +272,14 @@
 				688BB7992B84EC9E00083798 /* SearchItemsMapperTests.swift */,
 			);
 			path = "Search API";
+			sourceTree = "<group>";
+		};
+		688BB79B2B84F52C00083798 /* Combine Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				688BB79C2B84F55100083798 /* CombineHelpers.swift */,
+			);
+			path = "Combine Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,11 +392,14 @@
 				688BB7332B8105F300083798 /* AppDelegate.swift in Sources */,
 				688BB7972B84EAF700083798 /* HTTPURLResponse+StatusCode.swift in Sources */,
 				688BB7662B810DB300083798 /* SearchViewController.swift in Sources */,
+				688BB7A12B84F74D00083798 /* Environment.swift in Sources */,
 				688BB7942B84E75000083798 /* SearchItemsMapper.swift in Sources */,
 				688BB77A2B81505F00083798 /* DetailViewModel.swift in Sources */,
+				688BB79D2B84F55100083798 /* CombineHelpers.swift in Sources */,
 				688BB7722B8147C100083798 /* HomeUIComposer.swift in Sources */,
 				688BB7832B84D29900083798 /* HTTPClient.swift in Sources */,
 				688BB7862B84D2C600083798 /* URLSessionHTTPClient.swift in Sources */,
+				688BB79F2B84F6AE00083798 /* SearchItemsEndpoint.swift in Sources */,
 				688BB7352B8105F300083798 /* SceneDelegate.swift in Sources */,
 				688BB76C2B8115D400083798 /* DetailViewController.swift in Sources */,
 				688BB7772B81498200083798 /* HomeCoordinator.swift in Sources */,

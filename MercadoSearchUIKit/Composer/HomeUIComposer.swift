@@ -9,7 +9,14 @@ import UIKit
 
 final class HomeUIComposer {
     static func createHome() -> HomeViewController {
-        let searchViewModel = SearchViewModel()
+        let searchViewModel =  SearchViewModel { query in
+            let publisher = URLSessionHTTPClient(session: URLSession(configuration: .ephemeral))
+                .getPublisher(url: SearchItemsEndpoint.get.url(baseURL: Environment.baseUrl, query: query))
+                .tryMap(SearchItemsMapper.map)
+                .eraseToAnyPublisher()
+            return publisher
+        }
+        
         let searchViewController = createSearchViewController()
         
         let bundle = Bundle(for: HomeViewController.self)
