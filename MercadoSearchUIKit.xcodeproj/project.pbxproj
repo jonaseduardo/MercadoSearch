@@ -100,15 +100,14 @@
 		688BB7312B8105F300083798 /* MercadoSearchUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				688BB76D2B8115DA00083798 /* View Controllers */,
 				688BB7782B81501C00083798 /* View Models */,
+				688BB7802B84CF7000083798 /* Views */,
+				688BB77F2B84CF6400083798 /* Models */,
 				688BB7732B81494400083798 /* Navigation */,
 				688BB7702B8147B400083798 /* Composer */,
-				688BB76D2B8115DA00083798 /* View Controllers */,
 				688BB7322B8105F300083798 /* AppDelegate.swift */,
 				688BB7342B8105F300083798 /* SceneDelegate.swift */,
-				688BB7672B810F0900083798 /* SearchCell.swift */,
-				688BB7692B81107300083798 /* SearchItem.swift */,
-				688BB76E2B81350200083798 /* SearchViewModel.swift */,
 				688BB7382B8105F300083798 /* Main.storyboard */,
 				688BB73B2B8105F400083798 /* Assets.xcassets */,
 				688BB73D2B8105F400083798 /* LaunchScreen.storyboard */,
@@ -156,9 +155,26 @@
 		688BB7782B81501C00083798 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				688BB76E2B81350200083798 /* SearchViewModel.swift */,
 				688BB7792B81505F00083798 /* DetailViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		688BB77F2B84CF6400083798 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				688BB7692B81107300083798 /* SearchItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		688BB7802B84CF7000083798 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				688BB7672B810F0900083798 /* SearchCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

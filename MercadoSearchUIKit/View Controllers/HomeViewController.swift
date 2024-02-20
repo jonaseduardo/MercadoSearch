@@ -30,10 +30,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         configSearchView()
-        
-        viewModel.items = { items in
-            self.searchViewController.setSearchItems(items)
-        }
+        bindViewModel()
     }
     
     private func configSearchView() {
@@ -43,6 +40,12 @@ class HomeViewController: UIViewController {
         searchController.searchResultsUpdater = self
         
         navigationItem.searchController = searchController
+    }
+    
+    private func bindViewModel() {
+        viewModel.items = { items in
+            self.searchViewController.setSearchItems(items)
+        }
     }
     
     private func restartSearchState() {
