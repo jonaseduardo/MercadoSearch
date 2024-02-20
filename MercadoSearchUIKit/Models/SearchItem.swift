@@ -7,13 +7,22 @@
 
 import Foundation
 
-struct SearchItem {
+public struct SearchItem: Equatable {
     let name: String
+    let condition: String
+    let quantity: String
     let price: String
     
+    public init(name: String, condition: String, quantity: String, price: String) {
+        self.name = name
+        self.condition = condition
+        self.quantity = quantity
+        self.price = price
+    }
+    
     static var SomeItems: [SearchItem] {
-        [SearchItem(name: "uno", price: "100"),
-         SearchItem(name: "dos", price: "200"),
-         SearchItem(name: "tres", price: "300")]
+        [SearchItem(name: "uno", condition: "nuevo", quantity: "1", price: "100"),
+         SearchItem(name: "dos", condition: "nuevo", quantity: "1", price: "200"),
+         SearchItem(name: "tres", condition: "nuevo", quantity: "1", price: "300")]
     }
 }
