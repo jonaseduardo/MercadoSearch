@@ -43,8 +43,12 @@ class HomeViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        viewModel.onReceiveItems = { items in
-            self.searchViewController.setSearchItems(items)
+        viewModel.onReceiveItems = { [weak self] items in
+            self?.searchViewController.setSearchItems(items)
+        }
+        
+        viewModel.onReceiveError = { [weak self] error in
+            self?.searchViewController.setError(error: error)
         }
     }
     

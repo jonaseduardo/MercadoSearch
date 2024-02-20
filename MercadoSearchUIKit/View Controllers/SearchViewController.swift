@@ -19,6 +19,10 @@ class SearchViewController: UITableViewController {
         self.searchItems = searchItems
         tableView.reloadData()
     }
+    
+    func setError(error: SearchError) {
+        // Mostrar mensaje de error
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         searchItems.count
