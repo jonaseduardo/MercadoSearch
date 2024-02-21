@@ -11,12 +11,12 @@ protocol SearchResultDelegate: AnyObject {
   func didSelect(item: SearchItem)
 }
 
-class SearchViewController: UIViewController {
+final class SearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var errorLabel: UILabel!
     
     private var searchItems: [SearchItem] = []
-    var delegate: SearchResultDelegate?
+    weak var delegate: SearchResultDelegate?
     
     func setSearchItems(_ searchItems: [SearchItem]) {
         self.searchItems = searchItems

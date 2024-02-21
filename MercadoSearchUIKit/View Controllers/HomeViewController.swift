@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
     var navigateToDetail: ((SearchItem) -> Void)?
     
     let viewModel: SearchViewModel

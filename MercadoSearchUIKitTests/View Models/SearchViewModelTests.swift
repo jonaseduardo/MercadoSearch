@@ -63,7 +63,7 @@ final class SearchViewModelTests: XCTestCase {
         let viewModel = SearchViewModel { _ in
             publisher
         }
-        
+        trackForMemoryLeaks(viewModel)
         return viewModel
     }
 }

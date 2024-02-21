@@ -14,7 +14,7 @@ final class SearchViewControllerTests: XCTestCase {
         let searchItem1 = searchItem1()
         let searchItem2 = searchItem2()
         
-        let searchViewController = HomeUIComposer.createSearchViewController()
+        let searchViewController = makeSUT()
         searchViewController.loadViewIfNeeded()
         
         searchViewController.setSearchItems([searchItem1, searchItem2])
@@ -27,7 +27,7 @@ final class SearchViewControllerTests: XCTestCase {
     func test_setSearchItems_showCollectionView() {
         let searchItem = searchItem1()
         
-        let searchViewController = HomeUIComposer.createSearchViewController()
+        let searchViewController = makeSUT()
         searchViewController.loadViewIfNeeded()
         
         searchViewController.setSearchItems([searchItem])
@@ -39,7 +39,7 @@ final class SearchViewControllerTests: XCTestCase {
     func test_setError_DisplayErrorMessage() {
         let error: SearchError = .itemsSearchFailed
         
-        let searchViewController = HomeUIComposer.createSearchViewController()
+        let searchViewController = makeSUT()
         searchViewController.loadViewIfNeeded()
         
         searchViewController.setError(error: error)
@@ -61,7 +61,7 @@ final class SearchViewControllerTests: XCTestCase {
         let searchItem = searchItem1()
         let delegate = SearchResultDelegateSpy()
         
-        let searchViewController = HomeUIComposer.createSearchViewController()
+        let searchViewController = makeSUT()
         searchViewController.delegate = delegate
         searchViewController.loadViewIfNeeded()
         
@@ -69,5 +69,14 @@ final class SearchViewControllerTests: XCTestCase {
         searchViewController.simulateTapOnSearchItem(at: 0)
         
         XCTAssertEqual(delegate.selectedSearchItem, searchItem)
+    }
+    
+    // MARK: - Helpers
+    
+    private func makeSUT() -> SearchViewController {
+        let searchViewController = HomeUIComposer.createSearchViewController()
+        trackForMemoryLeaks(searchViewController)
+        
+        return searchViewController
     }
 }

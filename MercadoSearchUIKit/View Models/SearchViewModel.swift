@@ -14,7 +14,7 @@ struct SearchError: Error, Equatable {
     static let itemsSearchFailed = SearchError(message: "No items found")
 }
 
-class SearchViewModel {
+final class SearchViewModel {
     typealias SearchPublisher = (String) -> AnyPublisher<[SearchItem], Error>
     typealias ReceiveItems = ([SearchItem]) -> Void
     typealias ReceiveError = (SearchError) -> Void
