@@ -25,6 +25,18 @@ extension SearchViewController {
         delegate?.tableView?(tableView, didSelectRowAt: index)
     }
     
+    var collectionViewIsVisible: Bool {
+        !tableView.isHidden
+    }
+    
+    var errorViewIsVisible: Bool {
+        !errorLabel.isHidden
+    }
+    
+    var errorMessage: String? {
+        errorLabel.text
+    }
+    
     private func cell(row: Int, section: Int) -> UITableViewCell? {
         guard numberOfRows() > row else {
             return nil

@@ -13,17 +13,30 @@ protocol SearchResultDelegate: AnyObject {
 
 class SearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var errorLabel: UILabel!
     
     private var searchItems: [SearchItem] = []
     var delegate: SearchResultDelegate?
     
     func setSearchItems(_ searchItems: [SearchItem]) {
         self.searchItems = searchItems
+        showTableView()
         tableView.reloadData()
     }
     
     func setError(error: SearchError) {
-        // Mostrar mensaje de error
+        showErrorView()
+        errorLabel.text = error.message
+    }
+    
+    private func showTableView() {
+        tableView.isHidden = false
+        errorLabel.isHidden = true
+    }
+    
+    private func showErrorView() {
+        errorLabel.isHidden = false
+        tableView.isHidden = true
     }
 }
 

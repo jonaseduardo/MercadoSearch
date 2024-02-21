@@ -8,8 +8,10 @@
 import Foundation
 import Combine
 
-enum SearchError: Error {
-    case itemsSearchFailed
+struct SearchError: Error, Equatable {
+    let message: String
+    
+    static let itemsSearchFailed = SearchError(message: "No items found")
 }
 
 class SearchViewModel {
@@ -36,7 +38,7 @@ class SearchViewModel {
             case .finished:
                 break
             case .failure:
-                self?.onReceiveError?(SearchError.itemsSearchFailed)
+                self?.onReceiveError?(.itemsSearchFailed)
             }
             
         }, receiveValue: { [weak self] searchItems in
