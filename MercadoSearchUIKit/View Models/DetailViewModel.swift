@@ -17,4 +17,12 @@ struct DetailViewModel {
     var price: String {
         String(searchItem.price)
     }
+    
+    var condition: String {
+        searchItem.condition
+    }
+    
+    var quantity: String {
+        String(searchItem.quantity)
+    }
 }

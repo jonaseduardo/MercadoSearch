@@ -102,21 +102,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXE-8H-hU7">
+                                <rect key="frame" x="8" y="124.33333333333331" width="377" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYu-sV-3mf">
+                                <rect key="frame" x="8" y="153.33333333333334" width="377" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mbJ-KF-7ds"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="a2Z-ZC-hb8" firstAttribute="leading" secondItem="mbJ-KF-7ds" secondAttribute="leading" constant="8" id="3nf-ry-RuZ"/>
+                            <constraint firstItem="mbJ-KF-7ds" firstAttribute="trailing" secondItem="WXE-8H-hU7" secondAttribute="trailing" constant="8" id="7CB-Aj-aiS"/>
                             <constraint firstItem="mbJ-KF-7ds" firstAttribute="trailing" secondItem="vak-R8-5dq" secondAttribute="trailing" constant="8" id="Byo-ng-pjj"/>
+                            <constraint firstItem="DYu-sV-3mf" firstAttribute="top" secondItem="WXE-8H-hU7" secondAttribute="bottom" constant="8" id="Epx-ZY-541"/>
+                            <constraint firstItem="WXE-8H-hU7" firstAttribute="top" secondItem="vak-R8-5dq" secondAttribute="bottom" constant="8" id="I5a-L3-EdJ"/>
+                            <constraint firstItem="mbJ-KF-7ds" firstAttribute="trailing" secondItem="DYu-sV-3mf" secondAttribute="trailing" constant="8" id="Qux-G9-Mwn"/>
                             <constraint firstItem="a2Z-ZC-hb8" firstAttribute="top" secondItem="mbJ-KF-7ds" secondAttribute="top" constant="8" id="Vd7-Mx-jPl"/>
+                            <constraint firstItem="DYu-sV-3mf" firstAttribute="leading" secondItem="mbJ-KF-7ds" secondAttribute="leading" constant="8" id="cZO-L1-5XQ"/>
                             <constraint firstItem="mbJ-KF-7ds" firstAttribute="trailing" secondItem="a2Z-ZC-hb8" secondAttribute="trailing" constant="8" id="n6M-lA-fIW"/>
                             <constraint firstItem="vak-R8-5dq" firstAttribute="top" secondItem="a2Z-ZC-hb8" secondAttribute="bottom" constant="8" id="phs-Tw-2uN"/>
                             <constraint firstItem="vak-R8-5dq" firstAttribute="leading" secondItem="mbJ-KF-7ds" secondAttribute="leading" constant="8" id="tyj-TU-lVM"/>
+                            <constraint firstItem="WXE-8H-hU7" firstAttribute="leading" secondItem="mbJ-KF-7ds" secondAttribute="leading" constant="8" id="xtE-PQ-0Vk"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="conditionLabel" destination="WXE-8H-hU7" id="1WW-Gi-Ued"/>
                         <outlet property="nameLabel" destination="a2Z-ZC-hb8" id="A9H-Yl-jGD"/>
                         <outlet property="priceLabel" destination="vak-R8-5dq" id="HAd-C4-FAa"/>
+                        <outlet property="quantityLabel" destination="DYu-sV-3mf" id="tF2-F5-LCN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhd-i9-jlo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

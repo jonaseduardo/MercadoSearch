@@ -10,6 +10,8 @@ import UIKit
 class DetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var conditionLabel: UILabel!
+    @IBOutlet weak var quantityLabel: UILabel!
     
     let viewModel: DetailViewModel
     
@@ -25,7 +27,13 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configViews()
+    }
+    
+    private func configViews() {
         nameLabel.text = viewModel.name
         priceLabel.text = viewModel.price
+        conditionLabel.text = viewModel.condition
+        quantityLabel.text = viewModel.quantity
     }
 }

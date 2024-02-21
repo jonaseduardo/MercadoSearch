@@ -40,6 +40,9 @@
 		688BB7AA2B8620B500083798 /* SearchViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7A92B8620B500083798 /* SearchViewController+TestHelpers.swift */; };
 		688BB7AC2B86210A00083798 /* SearchResultDelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7AB2B86210A00083798 /* SearchResultDelegateSpy.swift */; };
 		688BB7AE2B8622B800083798 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7AD2B8622B800083798 /* UITableView+Dequeueing.swift */; };
+		688BB7B12B862C1E00083798 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7B02B862C1E00083798 /* DetailViewControllerTests.swift */; };
+		688BB7B32B862FD300083798 /* DetailViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7B22B862FD300083798 /* DetailViewController+TestHelpers.swift */; };
+		688BB7B52B86316B00083798 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7B42B86316B00083798 /* DetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,9 @@
 		688BB7A92B8620B500083798 /* SearchViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+TestHelpers.swift"; sourceTree = "<group>"; };
 		688BB7AB2B86210A00083798 /* SearchResultDelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDelegateSpy.swift; sourceTree = "<group>"; };
 		688BB7AD2B8622B800083798 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
+		688BB7B02B862C1E00083798 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		688BB7B22B862FD300083798 /* DetailViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+TestHelpers.swift"; sourceTree = "<group>"; };
+		688BB7B42B86316B00083798 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				688BB7A32B85275300083798 /* SearchViewModelTests.swift */,
+				688BB7B42B86316B00083798 /* DetailViewModelTests.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -308,6 +315,7 @@
 			children = (
 				688BB7A82B861F5D00083798 /* Helpers */,
 				688BB7A62B855DF600083798 /* SearchViewControllerTests.swift */,
+				688BB7B02B862C1E00083798 /* DetailViewControllerTests.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -316,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				688BB7A92B8620B500083798 /* SearchViewController+TestHelpers.swift */,
+				688BB7B22B862FD300083798 /* DetailViewController+TestHelpers.swift */,
 				688BB7AB2B86210A00083798 /* SearchResultDelegateSpy.swift */,
 			);
 			path = Helpers;
@@ -459,14 +468,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				688BB78C2B84D34D00083798 /* URLSessionHTTPClientTests.swift in Sources */,
+				688BB7B12B862C1E00083798 /* DetailViewControllerTests.swift in Sources */,
 				688BB78A2B84D33200083798 /* URLProtocolStub.swift in Sources */,
 				688BB7A42B85275300083798 /* SearchViewModelTests.swift in Sources */,
 				688BB78F2B84D38C00083798 /* TestHelpers.swift in Sources */,
+				688BB7B32B862FD300083798 /* DetailViewController+TestHelpers.swift in Sources */,
 				688BB7AC2B86210A00083798 /* SearchResultDelegateSpy.swift in Sources */,
 				688BB7AA2B8620B500083798 /* SearchViewController+TestHelpers.swift in Sources */,
 				688BB79A2B84EC9E00083798 /* SearchItemsMapperTests.swift in Sources */,
 				688BB7A72B855DF600083798 /* SearchViewControllerTests.swift in Sources */,
 				688BB7912B84D3B700083798 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				688BB7B52B86316B00083798 /* DetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,15 +24,15 @@ final class SearchViewControllerTests: XCTestCase {
     }
     
     func test_tapOnRow_selectSearchItem() {
-        let searchItem1 = searchItem1()
+        let searchItem = searchItem1()
         let delegate = SearchResultDelegateSpy()
         
         let searchViewController = HomeUIComposer.createSearchViewController()
         searchViewController.delegate = delegate
         
-        searchViewController.setSearchItems([searchItem1])
+        searchViewController.setSearchItems([searchItem])
         searchViewController.simulateTapOnSearchItem(at: 0)
         
-        XCTAssertEqual(delegate.selectedSearchItem, searchItem1)
+        XCTAssertEqual(delegate.selectedSearchItem, searchItem)
     }
 }
