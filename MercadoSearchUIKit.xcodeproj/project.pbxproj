@@ -98,6 +98,7 @@
 		688BB7B22B862FD300083798 /* DetailViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+TestHelpers.swift"; sourceTree = "<group>"; };
 		688BB7B42B86316B00083798 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
 		688BB7B62B86480200083798 /* SearchItemsEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsEndpointTests.swift; sourceTree = "<group>"; };
+		688BB7BC2B86792100083798 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 		688BB7262B8105F300083798 = {
 			isa = PBXGroup;
 			children = (
+				688BB7BC2B86792100083798 /* README.md */,
 				688BB7622B81064400083798 /* MercadoSearchUIKit.xctestplan */,
 				688BB7312B8105F300083798 /* MercadoSearchUIKit */,
 				688BB7482B8105F500083798 /* MercadoSearchUIKitTests */,
