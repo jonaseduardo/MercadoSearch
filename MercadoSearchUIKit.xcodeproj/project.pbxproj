@@ -43,6 +43,7 @@
 		688BB7B12B862C1E00083798 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7B02B862C1E00083798 /* DetailViewControllerTests.swift */; };
 		688BB7B32B862FD300083798 /* DetailViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7B22B862FD300083798 /* DetailViewController+TestHelpers.swift */; };
 		688BB7B52B86316B00083798 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7B42B86316B00083798 /* DetailViewModelTests.swift */; };
+		688BB7B72B86480200083798 /* SearchItemsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688BB7B62B86480200083798 /* SearchItemsEndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		688BB7B02B862C1E00083798 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
 		688BB7B22B862FD300083798 /* DetailViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+TestHelpers.swift"; sourceTree = "<group>"; };
 		688BB7B42B86316B00083798 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
+		688BB7B62B86480200083798 /* SearchItemsEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsEndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				688BB7992B84EC9E00083798 /* SearchItemsMapperTests.swift */,
+				688BB7B62B86480200083798 /* SearchItemsEndpointTests.swift */,
 			);
 			path = "Search API";
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 			files = (
 				688BB78C2B84D34D00083798 /* URLSessionHTTPClientTests.swift in Sources */,
 				688BB7B12B862C1E00083798 /* DetailViewControllerTests.swift in Sources */,
+				688BB7B72B86480200083798 /* SearchItemsEndpointTests.swift in Sources */,
 				688BB78A2B84D33200083798 /* URLProtocolStub.swift in Sources */,
 				688BB7A42B85275300083798 /* SearchViewModelTests.swift in Sources */,
 				688BB78F2B84D38C00083798 /* TestHelpers.swift in Sources */,
