@@ -68,7 +68,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="label" destination="C8o-Ux-lRc" id="t0n-kL-qdh"/>
+                                    <outlet property="searchlabel" destination="C8o-Ux-lRc" id="t0n-kL-qdh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

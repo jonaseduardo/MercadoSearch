@@ -29,7 +29,7 @@ final class HomeUIComposer {
         return controller
     }
     
-    private static func createSearchViewController() -> SearchViewController {
+    static func createSearchViewController() -> SearchViewController {
         let bundle = Bundle(for: SearchViewController.self)
         let storyboard = UIStoryboard(name: "Main", bundle: bundle)
         let controller = storyboard.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController

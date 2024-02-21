@@ -8,5 +8,5 @@
 import UIKit
 
 class SearchCell: UITableViewCell {
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var searchlabel: UILabel!
 }

@@ -29,10 +29,10 @@ class SearchViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell", for: indexPath) as! SearchCell
+        let cell: SearchCell = tableView.dequeueReusableCell()
         let searchItem = searchItems[indexPath.row]
         
-        cell.label.text = searchItem.name
+        cell.searchlabel.text = searchItem.name
         
         return cell
     }
