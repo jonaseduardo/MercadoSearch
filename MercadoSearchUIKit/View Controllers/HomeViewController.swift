@@ -30,6 +30,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         configSearchView()
+        configNavigationItem()
         bindViewModel()
     }
     
@@ -38,7 +39,10 @@ class HomeViewController: UIViewController {
         searchController.searchBar.placeholder = "Search Products"
         searchController.searchBar.delegate = self
         searchController.searchResultsUpdater = self
-        
+    }
+    
+    private func configNavigationItem() {
+        navigationItem.title = "Mercado Search"
         navigationItem.searchController = searchController
     }
     
