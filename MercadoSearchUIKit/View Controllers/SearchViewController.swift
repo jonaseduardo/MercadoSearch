@@ -11,7 +11,9 @@ protocol SearchResultDelegate: AnyObject {
   func didSelect(item: SearchItem)
 }
 
-class SearchViewController: UITableViewController {
+class SearchViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
+    
     private var searchItems: [SearchItem] = []
     var delegate: SearchResultDelegate?
     
@@ -23,12 +25,14 @@ class SearchViewController: UITableViewController {
     func setError(error: SearchError) {
         // Mostrar mensaje de error
     }
+}
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension SearchViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         searchItems.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: SearchCell = tableView.dequeueReusableCell()
         let searchItem = searchItems[indexPath.row]
         
@@ -36,8 +40,10 @@ class SearchViewController: UITableViewController {
         
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+}
+
+extension SearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let searchItem = searchItems[indexPath.row]
         delegate?.didSelect(item: searchItem)
     }

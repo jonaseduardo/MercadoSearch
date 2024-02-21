@@ -15,6 +15,7 @@ final class SearchViewControllerTests: XCTestCase {
         let searchItem2 = searchItem2()
         
         let searchViewController = HomeUIComposer.createSearchViewController()
+        searchViewController.loadViewIfNeeded()
         
         searchViewController.setSearchItems([searchItem1, searchItem2])
         
@@ -29,6 +30,7 @@ final class SearchViewControllerTests: XCTestCase {
         
         let searchViewController = HomeUIComposer.createSearchViewController()
         searchViewController.delegate = delegate
+        searchViewController.loadViewIfNeeded()
         
         searchViewController.setSearchItems([searchItem])
         searchViewController.simulateTapOnSearchItem(at: 0)
